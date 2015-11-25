@@ -1,0 +1,15 @@
+.modal.fade#create-new-file
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button(type='button', class='close', data-dismiss='modal')
+          span(aria-hidden='true') &times;
+        h4.modal-title Create New file
+      .modal-body
+        .alert-area.console-err
+        label Filename
+        input.form-control.create-new-filename(type='text')
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+        button.btn.btn-primary.create-new-file(type='button') Create
+

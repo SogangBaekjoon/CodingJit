@@ -1,0 +1,35 @@
+extends ./template/layout
+
+block content
+  .row
+    include ./modal/create_new_file.jade
+    include ./modal/send_commit.jade
+    include ./modal/new_repo.jade
+    .col-md-2.sidebar-1
+      each repo in repoList
+        .get-repo(data-url=repo.url)= repo.name
+      .plus-repo(data-toggle='modal', data-target='#new-repo')
+        i.fa.fa-plus
+    .col-md-offset-2.col-md-2.sidebar-2.file-area
+    .col-md-offset-4.col-md-8.code-area
+      .button-area
+        .button-elem.btn.btn-default.btn-xs.run 실행
+        .button-elem.btn.btn-default.btn-xs.commit(data-toggle='modal', data-target='#send-commit') 커밋
+        .button-elem.btn.btn-default.btn-xs.logout 로그아웃
+      textarea#source
+      .console-log
+
+          
+
+block script
+  script.
+    $(document).ready(function() {
+      getRepo();
+      getFile();
+      setCodeMirror();
+      setRun();
+      setCommit();
+      resize();
+      createNewFile();
+      makeRepo();
+    });

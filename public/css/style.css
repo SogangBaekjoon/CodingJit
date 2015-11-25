@@ -1,0 +1,107 @@
+body {
+  background-color: #262626;
+}
+.sidebar-1 {
+  background-color: #262626;
+  border: 1px solid black;
+  position: fixed;
+  height: 100%;
+  overflow: scroll;
+  padding: 0px;
+  margin-left: 15px;
+}
+.sidebar-2 {
+  position: fixed;
+  height: 100%;
+  overflow: scroll;
+  padding: 0px;
+  left:0px;
+  
+}
+
+.code-area {
+  padding: 0px;
+}
+.CodeMirror {
+  border: 1px solid #777;
+  border-width: 0px 1px;
+  margin: 0px;
+  height: 100%;
+  overflow: scroll;
+}
+.button-area {
+  background-color: #262626;
+  border: 0px solid #aaa;
+  border-bottom-width: 1px;
+  height: 40px;
+  color: #777;
+}
+.button-elem {
+  background: none !important;
+  border-radius: 0px;
+  border-width: 0px 1px 0px 0px;
+  padding: 10px;
+  color: #777;
+  height: 40px;
+  line-height: 20px;
+  width: 40px;
+}
+
+.button-elem:first-of-type {
+  border-left-width: 1px;
+}
+
+.button-elem:hover {
+  background-color: #363636;
+}
+.get-repo, .get-file, .make-file,
+.plus-repo
+{
+  color: #777;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.get-file,
+.make-file,
+{
+  padding-right: 10px;
+}
+.get-repo:hover,
+.get-file:hover,
+.make-file:hover,
+.plus-repo:hover,
+.block {
+  background-color: #363636;
+}
+.console-log {
+  padding: 10px;
+  background-color: #eee;
+  overflow: scroll;
+}
+
+.console-err {
+  color: #CC3D3D;
+}
+.console-success {
+  color: #47C83E;
+}
+.console-white {
+  color: #eee;
+}
+.inner {
+  padding-top: 10%;
+}
+.full-width {
+  width: 100%;
+}
+.logo {
+  background-image: url('/assets/img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  background-position: 0px 0px;
+}
+.logout {
+  width: 80px;
+}

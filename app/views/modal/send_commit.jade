@@ -1,0 +1,15 @@
+.modal.fade#send-commit
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button(type='button', class='close', data-dismiss='modal')
+          span(aria-hidden='true') &times;
+        h4.modal-title Commit
+      .modal-body
+        .alert-area.console-err
+        label Commit Message
+        input.form-control.commit-message(type='text')
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+        button.btn.btn-primary.send-commit(type='button') Create
+

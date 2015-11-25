@@ -1,0 +1,16 @@
+extends ./template/layout
+
+block content
+
+  .col-md-offset-4.col-md-4.inner
+    .logo
+    if flash && flash[0]
+      li.console-err= flash[0]
+    form(action='/login', method='POST')
+      .form-group
+        label.console-white GitHub Username
+        input.form-control(type='text', name='username')
+      .form-group
+        label.console-white Password
+        input.form-control(type='password', name='password')
+      button.full-width.btn.btn-default(type='submit', value='submit', onclick='return spinnerSpin() || true') submit

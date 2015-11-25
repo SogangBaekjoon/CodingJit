@@ -1,0 +1,17 @@
+.modal.fade#new-repo
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button(type='button', class='close', data-dismiss='modal')
+          span(aria-hidden='true') &times;
+        h4.modal-title Make New Repository
+      .modal-body
+        .alert-area.console-err
+        label Repository Name
+        input.form-control.repo-name(type='text')
+        label Repository Description
+        input.form-control.repo-description(type='text')
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+        button.btn.btn-primary.make-repo(type='button') Create
+
